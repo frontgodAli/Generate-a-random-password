@@ -3,12 +3,13 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let passwordOneEl=document.getElementById("password-one")
 let passwordTwoEl=document.getElementById("password-two")
-
+let inputEl=document.getElementById("input-element").value
 
 function generate(){
+    let inputEl=document.getElementById("input-element").value
     let generatedPasswordOne=""
     let generatedPasswordTwo=""
-    for(let i=0;i<15;i++){
+    for(let i=0;i<inputEl;i++){
         generatedPasswordOne+=characters[randomNumber()]
         generatedPasswordTwo+=characters[randomNumber()]
     }
