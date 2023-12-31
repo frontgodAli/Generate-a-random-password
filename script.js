@@ -6,14 +6,14 @@ let passwordTwoEl=document.getElementById("password-two")
 
 
 function generate(){
-    let savingFirstPass=""
-    let savingSecondPass=""
-    for(let i=0;i<16;i++){
-        savingFirstPass+=characters[randomNumber()]
-        savingSecondPass+=characters[randomNumber()]
+    let generatedPasswordOne=""
+    let generatedPasswordTwo=""
+    for(let i=0;i<15;i++){
+        generatedPasswordOne+=characters[randomNumber()]
+        generatedPasswordTwo+=characters[randomNumber()]
     }
-    passwordOneEl.textContent=savingFirstPass
-    passwordTwoEl.textContent=savingSecondPass
+    passwordOneEl.textContent=generatedPasswordOne
+    passwordTwoEl.textContent=generatedPasswordTwo
 }
 
 function randomNumber(){
